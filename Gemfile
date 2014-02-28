@@ -12,8 +12,8 @@ gem 'will_paginate'
 gem 'bootstrap-will_paginate'
 
 group :development do
-  gem 'sqlite3'
   gem 'annotate'
+  gem 'sqlite3'
 end
 
 
