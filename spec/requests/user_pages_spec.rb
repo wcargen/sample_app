@@ -8,7 +8,7 @@ describe "User pages" do
     before { visit signup_path }
 
     it { should have_selector('h1', :text => 'Sign up') }
-    it { should have_title(full_title('Sign up')) }
+    it { should have_title('Sign up') }
   end
 
   describe "profile page" do
@@ -16,7 +16,7 @@ describe "User pages" do
     before { visit user_path(user) }
 
     it { should have_selector('h1', :text => user.name) }
-    it { should have_title(full_title(user.name)) }
+    it { should have_title(user.name) }
   end
 
   describe "signup" do
@@ -32,7 +32,7 @@ describe "User pages" do
       describe "after submission" do
         before { click_button submit }
 
-        it { should have_title(full_title('Sign up')) }
+        it { should have_title('Sign up') }
         it { should have_content('error') }
       end
     end
