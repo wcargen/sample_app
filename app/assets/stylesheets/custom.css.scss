@@ -75,13 +75,13 @@ p {
   font-weight: bold;
   line-height: 1;
   &:hover {
-    color: blue;
+    color: #f1c40f;
     text-decoration: none;
   }
 }
 
 .navbar-inner {
-  background: #d35400;
+  background: #16a085;
 }
 
 /* footer */
@@ -173,6 +173,21 @@ input, textarea, select, .uneditable-input {
 .field_with_errors {
   @extend .control-group;
   @extend .error;
+}
+
+/* users index */
+
+.users {
+  list-style: none;
+  margin: 0;
+  li {
+    overflow: auto;
+    padding: 10px 0;
+    border-top: 1px solid $grayLighter;
+    &:last-child {
+      border-bottom: 1px solid $grayLighter;
+    }
+  }
 }
 
 
